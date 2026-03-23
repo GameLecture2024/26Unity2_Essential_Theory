@@ -27,8 +27,10 @@ public class MyScene : MonoBehaviour
 
     private void Initialize()
     {
-        Instantiate(RobotPrefab);
-        Instantiate(DoorPrefab, new Vector3(0, 0, 30), Quaternion.identity);
+        Instantiate(RobotPrefab, new Vector3(0, 1, 0), Quaternion.identity);
+        GameObject door = Instantiate(DoorPrefab, new Vector3(50, 0, 30), Quaternion.identity);
+        door.name = "Door";
+
         Instantiate(Sun);
         Instantiate(Floor);
         Instantiate(CameraPrefab, new Vector3(0, 1, 0), Quaternion.identity);
