@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DevTest : MonoBehaviour
+public class DevTest2 : MonoBehaviour
 {
     private void Awake()
     {
