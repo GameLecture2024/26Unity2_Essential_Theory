@@ -13,7 +13,7 @@ public class Robot : MonoBehaviour
     // 스크립트 이름으로 찾기
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    protected virtual void Start()
     {
         // 어디로 갈거다. X Y Z 어느 방향으로 갈것인가.
         // transform.rotation = Quaternion.Euler(0, 0, 0);
@@ -24,9 +24,16 @@ public class Robot : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
         // 방향   Scalar스칼라 Vector
+        RobotMove();
+    }
+    
+    protected void RobotMove()
+    {
         transform.Translate(direction.normalized * moveSpeed * Time.deltaTime);
     }
+
+    // OnCollision vs OnTrigger
 }
