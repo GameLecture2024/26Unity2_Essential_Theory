@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 
 public class Robot : MonoBehaviour
@@ -26,6 +27,13 @@ public class Robot : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
+        bool groundCheck = IsGroundCheck();
+
+        if(groundCheck)
+        {
+            Debug.Log("¶¥ ÀÔ´Ï´Ù.");
+        }
+
         // ¹æÇâ   Scalar½ºÄ®¶ó Vector
         RobotMove();
     }
@@ -35,5 +43,16 @@ public class Robot : MonoBehaviour
         transform.Translate(direction.normalized * moveSpeed * Time.deltaTime);
     }
 
-    // OnCollision vs OnTrigger
+    private bool IsGroundCheck()
+    {
+        return Physics.Raycast(transform.position, transform.up * -1, 5);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+
+        Gizmos.DrawLine(transform.position, transform.position + transform.up * (-1) * 5);
+    }
+
 }

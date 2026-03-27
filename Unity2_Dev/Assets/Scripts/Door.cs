@@ -21,7 +21,27 @@ public class Door : MonoBehaviour
 
         // 1 x 90 = 0   360 -> 360 
         // transform.rotation.y? 0 작을 때만 해라.
-        if(transform.localRotation.y <= 0)
+        if(transform.localRotation.y <= doorRotateValue)
+            transform.Rotate(new Vector3(0, doorClosePower, 0));
+    }
+
+    public void OpenDoor()
+    {
+        Debug.Log("Open Door");
+
+        // 플래그 / Event 방식을 사용해서 문이 진짜 열리도록.
+
+        if (transform.localRotation.y >= 0)
+            transform.Rotate(new Vector3(0, -doorClosePower, 0));
+    }
+
+    public void CloseDoor()
+    {
+        Debug.Log("Close Door");
+
+        // 플래그 / Event 방식을 사용해서 문이 진짜 열리도록.
+
+        if (transform.localRotation.y <= 0)
             transform.Rotate(new Vector3(0, doorClosePower, 0));
     }
 }
