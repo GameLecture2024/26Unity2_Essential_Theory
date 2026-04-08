@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,13 +9,23 @@ namespace DevTest
         
         public void StartButton()
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene("@Dev3DAni");
         }
 
         public void QuitButton()
         {
             Debug.Log("종료하겠습니다.");
-            // 게임을 종료시키는 기능을 실행하라.
+
+            Application.Quit();
+
+#if UNITY_EDITOR
+            EditorApplication.isPlaying = false;
+#endif
+        }
+
+        public void ShowPopupUI()
+        {
+            Instantiate(Resources.Load<GameObject>("Prefabs/UI/PopupUI"));
         }
     }
 }
