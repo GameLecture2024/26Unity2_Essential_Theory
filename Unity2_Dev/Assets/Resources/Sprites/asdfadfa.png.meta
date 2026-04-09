@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6ee502f98605f0542b6a4fec556ddcfa
+guid: 2b3ac5d7b77d96e4880ef7c520f1b588
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,9 +43,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -108,95 +108,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: T_Lightning_A_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7605832f0fb68694e8d472f76ef8021f
-      internalID: -566688853
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: T_Lightning_A_1
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46b6eb99483b008409d6d8515a7bf89c
-      internalID: -1189672603
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: T_Lightning_A_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5bde4cb40da84ac49a1a0d52b63187bd
-      internalID: -723398497
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: T_Lightning_A_3
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0daa5f1cbd7bbad4ebea1855b00c0a7f
-      internalID: -1739491658
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
@@ -209,14 +121,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":2.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
-    nameFileIdTable:
-      T_Lightning_A_0: -566688853
-      T_Lightning_A_1: -1189672603
-      T_Lightning_A_2: -723398497
-      T_Lightning_A_3: -1739491658
+      entries: []
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
